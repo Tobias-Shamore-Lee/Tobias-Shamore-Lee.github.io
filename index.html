@@ -18,7 +18,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tobias-shamore-lee.github.io.git","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
+    var CONFIG = {"hostname":"tobias-shamore-lee.github.io.git","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -207,7 +207,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-10 17:08:54" itemprop="dateModified" datetime="2020-02-10T17:08:54+08:00">2020-02-10</time>
+                <time title="Modified: 2020-02-10 21:26:39" itemprop="dateModified" datetime="2020-02-10T21:26:39+08:00">2020-02-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,9 +235,14 @@
           <h1 id="冯如杯笔记"><a href="#冯如杯笔记" class="headerlink" title="冯如杯笔记"></a>冯如杯笔记</h1><hr>
 <p>题目拟定：<br><strong>脑机接口对于色弱及色盲患者的辅助性治疗或根治的可能</strong></p>
 <hr>
-<h2 id="关于文献"><a href="#关于文献" class="headerlink" title="关于文献"></a>关于文献</h2><p>我这个题目参考文献也太难找了吧233<br>什么实验数据 项目 期刊论文几乎都没有这个方向的<br>似乎是个市场商机 但是做好感觉也不容易<br>先找找可以沾边的<br><strong>直接对象于题目的</strong><br><strong>关于大脑神经接口的</strong><br><strong>关于色觉的</strong><br><strong>关于信号处理的</strong></p>
-<p>记得补充<br>分类越多越详细吧</p>
+<h2 id="关于文献"><a href="#关于文献" class="headerlink" title="关于文献"></a>关于文献</h2><p>本题目参考文献 难找<br>实验数据 项目 期刊论文几乎都没有这个方向的<br>似乎是个市场商机 但是做好感觉也不容易<br>先找找可以沾边的<br><strong>直接对象于题目的</strong><br><strong>关于大脑神经接口的</strong><br><strong>关于色觉的</strong><br><strong>关于信号处理的</strong></p>
+<p>发现一位视觉诱发电位先驱William Dobelle，可以去看看他的文章<br>但他有没有让盲人看到颜色啊（doge:cry:</p>
 <hr>
+<h2 id="提纲"><a href="#提纲" class="headerlink" title="提纲"></a>提纲</h2><p><em>依照作品要求：<br>①创意主旨的阐述、创意背景及解决的实际问题；<br>②可行性的论述及相关领域的基本状况分析；<br>③论文（报告）中所涉及到的理论知识要有依据，要注明相关的参考文献。</em></p>
+<p>个人觉得主要分析可行性<br>首先侵入式、半侵入式、非侵入式的优缺点来选择最合适的方案<br><em>倾向于EEG，不然咋和穿戴式色觉矫正器竞争{–狗头–}</em><br>基于EEG的视觉诱发电位最为直接，可以添以P300辅助吧（此处yy，不过谁都不知道到底有没有用，多一个处理模块罢，万一可以提高精准度呢）</p>
+<p>重点来了！<br>特征提取和转换方法<br>特征提取涉及如何从EEG中提取少量的有用的信息，分别利用这些信息进行不同脑状态的区分。常用的特征提取的算法如：FFT ( Fast Fourier Transform Algorithm)、相关性分析、AR (Auto Regression)、参数估计、CSP ( Common Spatial Patterns)、Butter2worth低通滤波、遗传算法等。算法的选择与所利用的信号特征及电极位置有关。<br>对于色觉要选择合适的算法<br>应该可以参考运用色觉刺激来实验的文献吧<br>主要更正色觉系统<br>对于眼动信息应该可以滤，剩下应该还有很多无关变量</p>
+<p>信息反馈应该式直接给到视觉皮层就好了<br><em>可能要扎晶体管？？？看情况</em></p>
+<p>相关领域分析<br>Elon Musk我偶像hhhh<br>没啥资料 估计就是脑机接口的拓宽应用模式吧<br>倾向于 医疗 抑或式 人体增强(HI)吧</p>
 
       
     </div>
@@ -292,7 +297,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-10 17:07:57" itemprop="dateModified" datetime="2020-02-10T17:07:57+08:00">2020-02-10</time>
+                <time title="Modified: 2020-02-10 20:53:04" itemprop="dateModified" datetime="2020-02-10T20:53:04+08:00">2020-02-10</time>
               </span>
 
           
@@ -306,11 +311,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="想想感觉也没啥必须要写的，当做个BlogTest"><a href="#想想感觉也没啥必须要写的，当做个BlogTest" class="headerlink" title="想想感觉也没啥必须要写的，当做个BlogTest"></a>想想感觉也没啥必须要写的，当做个BlogTest</h2><p>那不如定一下近期大纲</p>
+          <h2 id="The-First-one"><a href="#The-First-one" class="headerlink" title="The First one !"></a>The First one !</h2><p>定一下近期大纲</p>
 <h3 id="当即要务"><a href="#当即要务" class="headerlink" title="当即要务"></a>当即要务</h3><p>跟进学校的进度吧<br>1.数分<br>2.基础物理<br>3.数据结构</p>
-<h3 id="冯如杯！！！！"><a href="#冯如杯！！！！" class="headerlink" title="冯如杯！！！！"></a>冯如杯！！！！</h3><p>千万别忘了<br>明后天把冯如杯进度更新上来吧</p>
-<h3 id="每天还有比较心烦的打卡"><a href="#每天还有比较心烦的打卡" class="headerlink" title="每天还有比较心烦的打卡"></a>每天还有比较心烦的打卡</h3><p>一共九个吧<br>小班日常四个<br>学校进度三个<br>疫情打卡两个<br>洛谷一个</p>
-<h4 id="想想还有啥-想到了补充"><a href="#想想还有啥-想到了补充" class="headerlink" title="想想还有啥 想到了补充"></a>想想还有啥 想到了补充</h4>
+<h3 id="冯如杯"><a href="#冯如杯" class="headerlink" title="冯如杯"></a>冯如杯</h3><p>勿忘<br>把冯如杯进度更新上来</p>
+<h3 id="打卡"><a href="#打卡" class="headerlink" title="打卡"></a>打卡</h3><p>一共九个吧<br>小班日常四个<br>学校进度三个<br>疫情打卡两个<br>洛谷一个</p>
+<p><strong>只是近期计划 开始网课估计也得变</strong></p>
+
       
     </div>
 
